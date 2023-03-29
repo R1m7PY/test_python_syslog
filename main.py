@@ -3,7 +3,7 @@ import time
 
 
 def Job():
-    syslog.openlog(ident="python_test", logoption=syslog.LOG_INFO, facility=syslog.LOG_MAIL)
+    syslog.openlog(ident="python_test", logoption=syslog.LOG_INFO, facility=syslog.LOG_AUTH)
     syslog.syslog("I started working")
     for i in range(5):
         time.sleep(2)
